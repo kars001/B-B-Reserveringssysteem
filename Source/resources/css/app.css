@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer components {
+    /* hier je style voor input en buttons */
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="select"],
+    textarea {
+        @apply bg-gray-200 outline-2 focus:outline-blue-200 rounded-lg px-2 py-1.5 outline-gray-200 text-sm;
+    }
+
+    button[type="submit"] {
+        @apply bg-blue-200 hover:bg-blue-300 text-sm transition-colors py-2 px-3 rounded-lg cursor-pointer;
+    }
+
+    a {
+        @apply hover:text-blue-400 transition-colors;
+    }
+}
