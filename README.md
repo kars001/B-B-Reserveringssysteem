@@ -1,4 +1,4 @@
-# Reserveringssysteem voor B&B (Laravel)
+# Reserveringssysteem voor B&B
 
 ## Over dit project
 
